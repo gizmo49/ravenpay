@@ -1,0 +1,56 @@
+@import "assets/scss/master";
+@import "assets/scss/_include-media-lib/include-media";
+
+
+.market__info {
+    border-left: 1px solid $border__color;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $primary_font_family--medium;
+
+    &--top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 6px;
+
+        span {
+            color: $secondary__theme_color;
+            font-size: 12px;
+            letter-spacing: 0.15px;
+        }
+    }
+
+    &--bottom {
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 0.15px;
+
+        .gain {
+            color: $primary__theme_color;
+        }
+    }
+
+}
+
+.market__row {
+    @include media("<=medium-screen") {
+        .col-md-3 {
+            &:first-child {
+                .market__info {
+                    border: 0;
+                }
+            }
+        }
+    }
+    @include media("<=small-screen") {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,19 @@
+@import "assets/scss/master";
+@import "assets/scss/_include-media-lib/include-media";
+
+.btc__balance{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #FFFFFF;
+    gap: 8px;
+    font-family: $primary_font_family--medium;
+    &--amount {
+        color: $primary__theme_color;
+    }
+    @include media("<=medium-screen") {
+        padding-bottom: 20px;
+    }
+
+}

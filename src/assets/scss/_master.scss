@@ -1,0 +1,20 @@
+:root {
+    --default-primary-color: #00C076;
+}
+
+// Fonts
+$primary_font_family: "Satoshi-Regular";
+$primary_font_family--light: "Satoshi-Light";
+$primary_font_family--medium: "Satoshi-Medium";
+$primary_font_family--bold: "Satoshi-Bold";
+$primary_font_family--black: "Satoshi-Black";
+
+
+
+/* make the customizations */
+$primary__theme_color: var(--default-primary-color);
+$secondary__theme_color: #A7B1BC;
+$border__color:#a7b1bc3d;
+$danger__theme_color: #ff3364;
+$gain__color: #25C26E;
+$loss__color: #FF6838;

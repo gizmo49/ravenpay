@@ -1,0 +1,98 @@
+@import "assets/scss/master";
+
+.table__container {
+
+    table.table {
+        font-size: 0.875rem;
+        text-transform: capitalize;
+        font-weight: 100;
+        letter-spacing: 0.0.125rem;
+        color: #060213;
+        background: transparent;
+        thead {
+           
+            tr {
+                vertical-align: middle;
+                th {
+                    color: #A7B1BC;
+                    font-size: 12px;
+                    font-family: $primary_font_family--medium;
+                    border-bottom: none;
+                    padding: 1.25rem 1.25rem;
+                    background: #20252B !important;
+                    text-align: left;
+                }
+            }
+        }
+        tbody {
+            border-top: none !important;
+            tr {
+                // min-height: 4.125rem;
+                vertical-align: middle;
+                td {
+                    background: #20252B !important;
+                    border: 0;
+                    color: #FFFFFF;
+                    font-size: 12px;
+                    font-family: $primary_font_family--medium;
+                    letter-spacing: 0.25px;
+                    &.inner-table-td {
+                        padding: 0;
+                    }
+                    &.loss__td{
+                        background: #ff683826 !important;
+                    }
+                    &.gain__td {
+                        background: #25c26e26 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table {
+    position: relative;
+    table-layout: fixed;
+}
+
+.table__head th {
+    // font-weight: 600;
+    padding: 10px !important;
+   
+}
+
+.table__head th:last-child {
+    text-align: right;
+}
+
+.table__head th,
+.table__body td {
+    font-weight: normal;
+    font-size: 16px;
+    vertical-align: middle !important;
+}
+
+.table__body td {
+    padding: 10px !important;
+    border-top: 0 !important;
+    position: relative;
+   
+}
+
+
+.table__body .dropdown__element td {
+    width: 100% !important;
+    column-span: all;
+}
+
+.table__body .dropdown__element td:last-child {
+    float: unset !important;
+}
+
+.table__body .accordion__text {
+    margin-left: 8px;
+}
+
+
+

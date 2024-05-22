@@ -1,0 +1,26 @@
+@import "assets/scss/master";
+
+.profile__toggle {
+    background: #12171D;
+    border-radius: 8px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 8px;
+    img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        // margin-right: 8px;
+    }
+    span {
+        color: $secondary__theme_color;
+        font-family: $primary_font_family--medium;
+        font-size: 14px;
+    }
+    svg {
+        margin-left: auto;
+        // margin-bottom: 5px;
+    }
+}

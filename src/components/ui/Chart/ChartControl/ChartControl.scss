@@ -1,0 +1,27 @@
+@import "assets/scss/master";
+
+.chart__control {
+    &--group{
+        border-bottom: 1px solid #1C2127;
+        // padding: 10px;
+        .chart__time{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            padding-bottom: 10px;
+            &--tip {
+                color: #A7B1BC;
+                font-size: 14px;
+                font-family: $primary_font_family--medium;
+                letter-spacing: 0.25px;
+                padding: 6px 12px;
+                border-radius: 100px;
+                cursor: pointer;
+                &.active {
+                    background: #555C63;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

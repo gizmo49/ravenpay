@@ -1,0 +1,47 @@
+@import "assets/scss/master";
+@import "assets/scss/_include-media-lib/include-media";
+
+.tabbed__header {
+    display: flex;
+    align-items: center;
+    border: 2px solid #1b1f25;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background: #1b1f25;
+    justify-content: space-evenly;
+
+    @include media("<=small-screen") {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        width: 100%;
+    }
+    .tabbed__element {
+        padding: 4px 0;
+        padding-left: 0;
+        font-size: 12px;
+        white-space: nowrap;
+        color: #A7B1BC !important;
+        letter-spacing: 0.15px;
+        line-height: 24px;
+        font-family: $primary_font_family--medium;
+        letter-spacing: 0.25px;
+        text-decoration: none;
+        margin: 0;
+        transition: all 1s;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 8px;
+
+        &.active {
+            color: #fff !important;
+            background: #21262c;
+            // border: 1px solid #25C26E;
+            // box-shadow: 0px 3px 1px 0px #0000000A;
+            // box-shadow: 0px 3px 8px 0px #0000001F;
+
+        }
+    }
+}

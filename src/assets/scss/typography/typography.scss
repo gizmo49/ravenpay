@@ -1,0 +1,37 @@
+@import "assets/scss/master";
+
+.gain {
+    color: $gain__color;
+}
+
+.loss {
+    color: $loss__color;
+}
+
+.neutral {
+    color: #FCFCFD;
+}
+.gain__neutral {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    letter-spacing: 0.25px;
+    // text-align: center;
+    svg path {
+        fill: $gain__color;
+    }
+    span {
+        font-size: 16px;
+    }
+}
+
+.info__text {
+    font-size: 12px;
+    color: #A7B1BC !important;
+    letter-spacing: 0.15px;;
+    &--lg {
+        font-size: 14px;
+        letter-spacing: 0.25px;
+    }
+}

@@ -1,0 +1,33 @@
+
+.mint-container {
+	max-width: 1240px;
+	margin: auto;
+}
+@media (max-width: 1310px) {
+	.mint-container {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+@media (max-width: 1240px) {
+	.mint-container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media (max-width: 1024px) {
+	.mint-container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+@media (max-width: 568px) {
+	.mint-container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+
+.d-visibility-none {
+    opacity: 0;
+}

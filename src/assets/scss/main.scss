@@ -1,0 +1,16 @@
+@import "./master";
+
+html {
+    /* min-height: 100%; */
+    position: relative;
+    height: auto !important;
+}
+
+html,
+body {
+    font-family: $primary_font_family;
+    color: #000000;
+    background: #1C2127;
+    max-width: 100%;
+    overflow-x: hidden;
+}

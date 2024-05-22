@@ -1,0 +1,17 @@
+@import "assets/scss/master";
+
+.chart__tooltip {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+    &--tip {
+        color: #A7B1BC;
+        font-size: 10px;
+        font-family: $primary_font_family--medium;
+        letter-spacing: 0.25px;
+        span {
+            color: $primary__theme_color;
+        }
+    }
+}
